@@ -1,6 +1,5 @@
 var map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([40.645,-73.945],14);
-var tiles=L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',attribution:'&copy; OpenStreetMap contributors &copy; CARTO'}).addTo(map);
-var fell=false;tiles.on('tileerror',function(){if(fell)return;fell=true;map.removeLayer(tiles);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map)});
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 var layer=L.layerGroup().addTo(map),bkOnly=true;
 function draw(){layer.clearLayers();var n=0;
  BOXES.forEach(function(b,i){var cat=b[2];if(bkOnly&&!b[5])return;if(!document.getElementById('c'+cat).checked)return;n++;
