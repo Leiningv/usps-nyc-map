@@ -1,0 +1,5 @@
+html,body,#map{margin:0;height:100%}body{font:14px/1.4 system-ui,-apple-system,sans-serif}
+.bar{position:absolute;z-index:1000;top:10px;left:10px;background:#fff;border:1px solid #111;padding:6px 10px;max-width:220px;font-size:13px}
+.bar b{display:block}.bar button{height:34px;border:1px solid #111;background:#fff;margin-top:4px;font-size:13px;padding:0 8px}.bar button.on{background:#111;color:#fff}
+.bar label{display:flex;align-items:center;gap:6px;padding:2px 0}
+.leaflet-popup-content{margin:10px 12px;font-size:14px}
